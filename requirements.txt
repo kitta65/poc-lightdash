@@ -1,1 +1,2 @@
 dbt-bigquery>=1.7.0, ==1.7.*
+shandy-sqlfmt[jinjafmt]>=0.21.0, ==0.21.*
