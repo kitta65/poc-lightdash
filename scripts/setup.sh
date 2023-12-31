@@ -11,4 +11,4 @@ pip install -r requirements.txt
 deactivate
 
 # lightdash
-npm install -g @lightdash/cli
+npm install

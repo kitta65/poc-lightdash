@@ -1,6 +1,9 @@
 # python
 venv/
 
+# node
+node_modules/
+
 # dbt
 target/
 dbt_packages/
