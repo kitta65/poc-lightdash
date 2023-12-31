@@ -2,5 +2,5 @@
 set -euo pipefail
 cd $(dirname $0)/.. # project root
 
-npx lightdash dbt run
+npx lightdash generate
 dbt-osmosis yaml refactor
