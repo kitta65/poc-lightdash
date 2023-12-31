@@ -3,47 +3,92 @@ models:
   - name: stg_thelook_ecommerce__users
     columns:
       - name: user_id
-        description: ''
+        description: ""
         data_type: INT64
+        meta:
+          dimension:
+            type: number
       - name: first_name
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: last_name
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: email
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: age
-        description: ''
+        description: ""
         data_type: INT64
+        meta:
+          dimension:
+            type: number
       - name: gender
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: state
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: street_address
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: postal_code
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: city
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: country
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: latitude
-        description: ''
+        description: ""
         data_type: FLOAT64
+        meta:
+          dimension:
+            type: number
       - name: longitude
-        description: ''
+        description: ""
         data_type: FLOAT64
+        meta:
+          dimension:
+            type: number
       - name: traffic_source
-        description: ''
+        description: ""
         data_type: STRING
+        meta:
+          dimension:
+            type: string
       - name: created_at
-        description: ''
+        description: ""
         data_type: TIMESTAMP
+        meta:
+          dimension:
+            type: timestamp

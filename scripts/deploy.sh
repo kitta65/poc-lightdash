@@ -2,5 +2,7 @@
 set -euo pipefail
 cd $(dirname $0)/.. # project root
 
-npx lightdash dbt run --select tag:lightdash
+if ! [[ -v CI ]]; then
+    npx lightdash preview
+fi
 npx lightdash deploy
