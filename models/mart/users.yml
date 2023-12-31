@@ -1,0 +1,49 @@
+version: 2
+models:
+  - name: users
+    columns:
+      - name: user_id
+        data_type: INT64
+        description: ''
+      - name: first_name
+        data_type: STRING
+        description: ''
+      - name: last_name
+        data_type: STRING
+        description: ''
+      - name: email
+        data_type: STRING
+        description: ''
+      - name: age
+        data_type: INT64
+        description: ''
+      - name: gender
+        data_type: STRING
+        description: ''
+      - name: state
+        data_type: STRING
+        description: ''
+      - name: street_address
+        data_type: STRING
+        description: ''
+      - name: postal_code
+        data_type: STRING
+        description: ''
+      - name: city
+        data_type: STRING
+        description: ''
+      - name: country
+        data_type: STRING
+        description: ''
+      - name: latitude
+        data_type: FLOAT64
+        description: ''
+      - name: longitude
+        data_type: FLOAT64
+        description: ''
+      - name: traffic_source
+        data_type: STRING
+        description: ''
+      - name: created_at
+        data_type: TIMESTAMP
+        description: ''

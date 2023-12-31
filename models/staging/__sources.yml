@@ -6,9 +6,235 @@ sources:
     schema: thelook_ecommerce
     tables:
       - name: distribution_centers
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: name
+            data_type: STRING
+            description: ''
+          - name: latitude
+            data_type: FLOAT64
+            description: ''
+          - name: longitude
+            data_type: FLOAT64
+            description: ''
       - name: events
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: user_id
+            data_type: INT64
+            description: ''
+          - name: sequence_number
+            data_type: INT64
+            description: ''
+          - name: session_id
+            data_type: STRING
+            description: ''
+          - name: created_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: ip_address
+            data_type: STRING
+            description: ''
+          - name: city
+            data_type: STRING
+            description: ''
+          - name: state
+            data_type: STRING
+            description: ''
+          - name: postal_code
+            data_type: STRING
+            description: ''
+          - name: browser
+            data_type: STRING
+            description: ''
+          - name: traffic_source
+            data_type: STRING
+            description: ''
+          - name: uri
+            data_type: STRING
+            description: ''
+          - name: event_type
+            data_type: STRING
+            description: ''
       - name: inventory_items
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: product_id
+            data_type: INT64
+            description: ''
+          - name: created_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: sold_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: cost
+            data_type: FLOAT64
+            description: ''
+          - name: product_category
+            data_type: STRING
+            description: ''
+          - name: product_name
+            data_type: STRING
+            description: ''
+          - name: product_brand
+            data_type: STRING
+            description: ''
+          - name: product_retail_price
+            data_type: FLOAT64
+            description: ''
+          - name: product_department
+            data_type: STRING
+            description: ''
+          - name: product_sku
+            data_type: STRING
+            description: ''
+          - name: product_distribution_center_id
+            data_type: INT64
+            description: ''
       - name: order_items
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: order_id
+            data_type: INT64
+            description: ''
+          - name: user_id
+            data_type: INT64
+            description: ''
+          - name: product_id
+            data_type: INT64
+            description: ''
+          - name: inventory_item_id
+            data_type: INT64
+            description: ''
+          - name: status
+            data_type: STRING
+            description: ''
+          - name: created_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: shipped_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: delivered_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: returned_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: sale_price
+            data_type: FLOAT64
+            description: ''
       - name: orders
+        columns:
+          - name: order_id
+            data_type: INT64
+            description: ''
+          - name: user_id
+            data_type: INT64
+            description: ''
+          - name: status
+            data_type: STRING
+            description: ''
+          - name: gender
+            data_type: STRING
+            description: ''
+          - name: created_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: returned_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: shipped_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: delivered_at
+            data_type: TIMESTAMP
+            description: ''
+          - name: num_of_item
+            data_type: INT64
+            description: ''
       - name: products
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: cost
+            data_type: FLOAT64
+            description: ''
+          - name: category
+            data_type: STRING
+            description: ''
+          - name: name
+            data_type: STRING
+            description: ''
+          - name: brand
+            data_type: STRING
+            description: ''
+          - name: retail_price
+            data_type: FLOAT64
+            description: ''
+          - name: department
+            data_type: STRING
+            description: ''
+          - name: sku
+            data_type: STRING
+            description: ''
+          - name: distribution_center_id
+            data_type: INT64
+            description: ''
       - name: users
+        columns:
+          - name: id
+            data_type: INT64
+            description: ''
+          - name: first_name
+            data_type: STRING
+            description: ''
+          - name: last_name
+            data_type: STRING
+            description: ''
+          - name: email
+            data_type: STRING
+            description: ''
+          - name: age
+            data_type: INT64
+            description: ''
+          - name: gender
+            data_type: STRING
+            description: ''
+          - name: state
+            data_type: STRING
+            description: ''
+          - name: street_address
+            data_type: STRING
+            description: ''
+          - name: postal_code
+            data_type: STRING
+            description: ''
+          - name: city
+            data_type: STRING
+            description: ''
+          - name: country
+            data_type: STRING
+            description: ''
+          - name: latitude
+            data_type: FLOAT64
+            description: ''
+          - name: longitude
+            data_type: FLOAT64
+            description: ''
+          - name: traffic_source
+            data_type: STRING
+            description: ''
+          - name: created_at
+            data_type: TIMESTAMP
+            description: ''

@@ -1,24 +1,28 @@
 version: 2
 models:
-  - name: session
+  - name: sessions
     columns:
       - name: session_id
         description: ""
         meta:
           dimension:
             type: string
+        data_type: STRING
       - name: user_id
         description: ""
         meta:
           dimension:
             type: number
+        data_type: INT64
       - name: started_at
         description: ""
         meta:
           dimension:
             type: timestamp
+        data_type: TIMESTAMP
       - name: ended_at
         description: ""
         meta:
           dimension:
             type: timestamp
+        data_type: TIMESTAMP

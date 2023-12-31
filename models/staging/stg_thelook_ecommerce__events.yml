@@ -4,27 +4,40 @@ models:
     columns:
       - name: event_id
         description: ""
+        data_type: INT64
       - name: user_id
         description: ""
+        data_type: INT64
       - name: sequence_number
         description: ""
+        data_type: INT64
       - name: session_id
         description: ""
+        data_type: STRING
       - name: created_at
         description: ""
+        data_type: TIMESTAMP
       - name: ip_address
         description: ""
+        data_type: STRING
       - name: city
         description: ""
+        data_type: STRING
       - name: state
         description: ""
+        data_type: STRING
       - name: postal_code
         description: ""
+        data_type: STRING
       - name: browser
         description: ""
+        data_type: STRING
       - name: traffic_source
         description: ""
+        data_type: STRING
       - name: uri
         description: ""
+        data_type: STRING
       - name: event_type
         description: ""
+        data_type: STRING
