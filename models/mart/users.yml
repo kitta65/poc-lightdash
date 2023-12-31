@@ -5,9 +5,15 @@ models:
       - name: user_id
         data_type: INT64
         description: ""
+        tests:
+          - not_null
+          - unique
         meta:
           dimension:
             type: number
+          metrics:
+            count_users:
+              type: count
       - name: first_name
         data_type: STRING
         description: ""

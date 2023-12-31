@@ -1,6 +1,10 @@
 version: 2
 models:
   - name: sessions
+    meta:
+      joins:
+        - join: users
+          sql_on: ${sessions.user_id} = ${users.user_id}
     columns:
       - name: session_id
         description: ""
@@ -13,6 +17,9 @@ models:
         meta:
           dimension:
             type: number
+          metrics:
+            count_users:
+              type: count_distinct
         data_type: INT64
       - name: started_at
         description: ""
