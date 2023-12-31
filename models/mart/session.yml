@@ -4,9 +4,21 @@ models:
     columns:
       - name: session_id
         description: ""
+        meta:
+          dimension:
+            type: string
       - name: user_id
         description: ""
+        meta:
+          dimension:
+            type: number
       - name: started_at
         description: ""
+        meta:
+          dimension:
+            type: timestamp
       - name: ended_at
         description: ""
+        meta:
+          dimension:
+            type: timestamp
