@@ -5,78 +5,39 @@ models:
       - name: event_id
         description: ""
         data_type: INT64
-        meta:
-          dimension:
-            type: number
       - name: user_id
         description: ""
         data_type: INT64
-        meta:
-          dimension:
-            type: number
       - name: sequence_number
         description: ""
         data_type: INT64
-        meta:
-          dimension:
-            type: number
       - name: session_id
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: created_at
         description: ""
         data_type: TIMESTAMP
-        meta:
-          dimension:
-            type: timestamp
       - name: ip_address
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: city
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: state
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: postal_code
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: browser
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: traffic_source
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: uri
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
       - name: event_type
         description: ""
         data_type: STRING
-        meta:
-          dimension:
-            type: string
