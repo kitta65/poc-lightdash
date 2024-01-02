@@ -12,6 +12,9 @@ models:
           dimension:
             type: string
         data_type: STRING
+        tests:
+          - unique
+          - not_null
       - name: user_id
         description: ""
         meta:
